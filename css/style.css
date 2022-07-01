@@ -59,8 +59,8 @@ body {
 #buttons-container button{
     border: 1px solid transparent;
     border-radius: 0;
-    height: 4em;
-    font-size: 1.4em;
+    height: 3em;
+    font-size: 1.3em;
     background-color: #dbdbdb;
     cursor:pointer;
 }
