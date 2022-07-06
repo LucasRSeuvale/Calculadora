@@ -87,7 +87,7 @@ class Calculator {
         operationValue = current;
       }
       // Add current value to previous
-      this.previousOperationText.innerText = `${operationValue} ${operation}`;
+      this.previousOperationText.innerText = `${parseInt(operationValue)} ${operation}`;
       this.currentOperationText.innerText = "";
     }
   }
@@ -99,7 +99,7 @@ class Calculator {
     if (!mathOperations.includes(operation)) {
       return;
     }
-
+   console.log(operation)
     this.previousOperationText.innerText =
       this.previousOperationText.innerText.slice(0, -1) + operation;
   }
@@ -136,7 +136,7 @@ buttons.forEach((btn) => {
     const value = e.target.innerText;
 
     if (+value >= 0 || value === ".") {
-      console.log(value);
+     
       calc.addDigit(value);
     } else {
       calc.processOperation(value);
